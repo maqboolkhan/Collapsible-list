@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="ul.js"></script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<!-- just add "col_ul" class with the <ul> you want to be collapsible
+		 now all the multi level <ul> will be hidden
+	  -->
+	<ul class="col_ul">
+		<li><span>coffee</span>
+			<ul>
+				<li><span>paki</span>  <!-- Add <span> tag arround every multi level <li>
+										so it can behave like a toggle button -->
+					<ul>
+						<li>karachi    <!-- It will not work because it has no span tag arround it :(
+						                -->
+							<ul>
+								<li>North</li>
+								<li>West</li>
+							</ul>
+						</li>
+						<li>lahore</li>
+					</ul>
+				</li>
+				<li>indian</li>
+				<li>arbian</li>
+			</ul>
+		</li>
+		<li>milk</li>
+		<li>honey</li>
+	</ul>
+</body>
+</html>
